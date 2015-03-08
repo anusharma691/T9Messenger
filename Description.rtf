@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fswiss\fcharset0 Helvetica;\f2\ftech\fcharset77 Symbol;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Non-Predictive Mode
+\b0  \
+\
+If you are NOT in predictive mode, the application behavior is simple. Multiple clicks of a button will result in a change of the letter. For example, clicking \'932\'94 and waiting will cause the letter \'93A\'94 to appear. Clicking \'932\'94 twice rapidly will cause a \'93B\'94.\
+\
+
+\b Predictive Mode
+\b0  \
+The program will always interpret button 2-9 presses as letters. The challenge is to decide which letter was intended. The output text is at the bottom is the display. It gets updated as the user presses the buttons. The display must hold at least 20 characters and need not be more than one line. At any point in time the display shows all previously typed words and the program\'92s first choice for the word currently being typed. This could be a complete word or the prefix of an incomplete word. If no legal word is possible using the prefix typed, the display will show hyphens (\'94-\'94) whose count is equal to the number of keys pressed so far. The button marked \'93<\'94 is the backspace. It deletes the most recent button press from the letter rows. The application behaves as if the remaining letters were pressed for the first time.\
+The button marked 0 / \'98(tilde) is the next function. It circulates to the next word choice that can be assembled from the sequence of button presses so far. Its behavior is only well-defined if a complete word is showing. If only a prefix of a valid word is showing, the behavior is undefined except that it must not impede the user from continuing to use the application normally. If the \'93invalid prefix\'94 hyphen string is showing, the next button has no effect.\
+There is no symbol under \'93#\'94. It is the space button. Once the user enters a space, she or he may press a backspace to delete the space, and in addition to the space, the previous word is deleted. \
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\f2\fs30 \cf0 {\listtext	\'a5	}
+\f0 \expnd0\expndtw0\kerning0
+What components exist on the client side: \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\fs24 \cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+The client side provides T9 messenger functionalities. There is predictive and non -predictive mode.\uc0\u8232 In Non- predictive mode, client is independent of the web service. It just displays the letters corresponding to the buttons clicked. 
+\fs24 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+Predictive mode accesses the web service\'92s methods and returns the valid word or predicted word.\uc0\u8232 MainPage.xaml is the View.\u8232 There is one Model.cs class which performs interaction with the server by invoking the desired methods. 
+\fs24 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+MainPage.xaml.cs class performs the non-predictive functionality and uses Model class to get the words in the predictive mode and update the User Interface. 
+\fs24 \expnd0\expndtw0\kerning0
+\uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\f2\fs30 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\'a5	}
+\f0 \expnd0\expndtw0\kerning0
+What components exist on the server side:\
+\uc0\u8232 These are the methods existing on the server side. \
+		void loadDictionary()- 
+\fs24 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+Initializes a data structure with all the words from english-words.txt. This process happens only once when the server is running, no matter how many times you call this method from the client. This method has to be invoked first by the client in order to get a list of valid words or prefix after invoking the method getPredictiveText specified below. \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\fs24 \cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+List<String> getPredictiveText(String keyPresses); 
+\fs24 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+This method returns a list of valid words or valid prefix that can be formed from the Key Presses that is passed as a parameter to the method, otherwise, returns a string of hyphens whose length equals the length of keys pressed. The expected input parameter is a string of keypresses between the numbers 2-9. 
+\fs24 \expnd0\expndtw0\kerning0
+\uc0\u8232 \
+}

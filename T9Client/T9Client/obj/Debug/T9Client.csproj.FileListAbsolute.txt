@@ -1,0 +1,11 @@
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\Bin\Debug\T9Client.dll
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\Bin\Debug\T9Client.pdb
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\Bin\Debug\AppManifest.xaml
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\Bin\Debug\T9Client.xap
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\Bin\Debug\T9ClientTestPage.html
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\obj\Debug\App.g.i.cs
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\obj\Debug\MainPage.g.i.cs
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\obj\Debug\T9Client.g.resources
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\obj\Debug\T9Client.dll
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\obj\Debug\T9Client.pdb
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client\obj\Debug\XapCacheFile.xml

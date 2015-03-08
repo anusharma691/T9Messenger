@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T9Client", "T9Client\T9Client.csproj", "{8902B9C5-F8D5-4A02-B1DB-3D362CA4C034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T9Client.Web", "T9Client.Web\T9Client.Web.csproj", "{189868B9-ECD0-4553-9A79-27F48AFD5E70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8902B9C5-F8D5-4A02-B1DB-3D362CA4C034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8902B9C5-F8D5-4A02-B1DB-3D362CA4C034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8902B9C5-F8D5-4A02-B1DB-3D362CA4C034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8902B9C5-F8D5-4A02-B1DB-3D362CA4C034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189868B9-ECD0-4553-9A79-27F48AFD5E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189868B9-ECD0-4553-9A79-27F48AFD5E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189868B9-ECD0-4553-9A79-27F48AFD5E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189868B9-ECD0-4553-9A79-27F48AFD5E70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

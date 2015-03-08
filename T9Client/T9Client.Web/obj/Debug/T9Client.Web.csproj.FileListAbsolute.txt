@@ -1,0 +1,5 @@
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client.Web\bin\T9Client.Web.dll
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client.Web\bin\T9Client.Web.pdb
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client.Web\obj\Debug\T9Client.Web.dll
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client.Web\obj\Debug\T9Client.Web.pdb
+C:\Users\Anu\Documents\Visual Studio 2010\Projects\T9Client\T9Client.Web\obj\Debug\T9Client.Web.csprojResolveAssemblyReference.cache

@@ -1,0 +1,43 @@
+Execution Steps:
+
+1. In debug folder, run WcfWebServiceConsoleApplication.exe as an administrator.
+2. The prompt will show you the link of the running web service.
+3. The client program can use this server by adding the service reference with the link provided in Step 2.
+
+WSDL file of the service is also provided for the reference.
+
+Service Contract:
+
+Implementation of web service implements the following methods:
+
+ public interface IT9Msgr
+    {
+
+        [OperationContract]
+        void initialize();
+
+        [OperationContract]
+        List<String> getWords(String key);
+    }
+
+
+It is important to invoke the initialize() first as it will build up the data structure which would contain all the words from english-words.txt file.
+
+The getWords() takes String of key presses(i.e. 2-9) as argument, sends it to the server and server will then return the list of all possible words
+(of the length of key) with those key presses. For example: getWords("223") would return "ace", "bad", "bae", "cad" (words with length 3). 
+
+This method would return "-"(number of hyphens will be equal to the key length) if the key does not exist or you can say list does not contain any
+word starting with the string corresponding to the key. For example: getWords("789546565 ") would return "---------" As, key doesn't exist.
+
+If the key is present in the list but the word-list corresponding to the key does not contain any word of length equal to the key length. Then server
+would return the number of words equal to the key length. For example: getWords("2334") would return 4 words(as key length is 4) : "addibility",
+"addible", "addicent", "addict".
+
+If the key value is null or empty or any invalid value, then server would return "Enter a different key. Value is invalid".
+
+
+
+
+   
+
+

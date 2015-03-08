@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="241ed854-a36d-4a23-89fc-88b529e86f45" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Lab-3-Web-Service-1.0/Service1" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="e162d7bd-ad49-4a6a-9cf6-c07d4b635e41" SourceId="1" SourceUrl="http://localhost:8731/Lab-3-Web-Service-1.0/Service1?xsd=xsd1" />
+    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="a02c999c-9408-49ea-a539-c01964aae2f5" SourceId="1" SourceUrl="http://localhost:8731/Lab-3-Web-Service-1.0/Service1?xsd=xsd2" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="fa661f47-467b-4fa2-9169-a7644c0fc08f" SourceId="1" SourceUrl="http://localhost:8731/Lab-3-Web-Service-1.0/Service1?wsdl" />
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="1ba90272-cb0f-4eea-aa98-7a7181fbec6d" SourceId="1" SourceUrl="http://localhost:8731/Lab-3-Web-Service-1.0/Service1?disco" />
+    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="c7059de1-21db-4893-9346-036805e9d561" SourceId="1" SourceUrl="http://localhost:8731/Lab-3-Web-Service-1.0/Service1?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
